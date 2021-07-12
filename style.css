@@ -1,0 +1,215 @@
+/* ///////////////////////////////////////////////// */
+/* ////////////////INIT////////////////// */
+/* //////////////////////////////////////////////// */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  --primary-blue-dkr: hsl(238, 29%, 16%);
+  --primary-red-lt: hsl(14, 88%, 65%);
+  --primary-violet-lt: hsl(273, 75%, 66%);
+  --primary-blue-lt: hsl(240, 73%, 65%);
+  --neutral-gray-blue-dkr: hsl(237, 12%, 33%);
+  --neutral-gray-blue-dk: hsl(240, 6%, 50%);
+  --divider-gray-blue: hsl(240, 5%, 91%);
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////BASIC SETUP////////////////// */
+/* //////////////////////////////////////////////// */
+
+.row {
+  width: 950px;
+}
+
+.section-center {
+  min-height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to top,
+    var(--primary-blue-lt),
+    var(--primary-violet-lt)
+  );
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////IMAGES////////////////// */
+/* //////////////////////////////////////////////// */
+
+.box {
+  position: absolute;
+  margin: 5rem 0 0 -59rem;
+}
+
+.illustration-img-mobile {
+  display: none;
+}
+
+.illustration-img {
+  height: 500px;
+  width: 472px;
+  background: url(./images/illustration-woman-online-desktop.svg),
+    url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -5rem 45%, -36rem 65%;
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////FAQ////////////////// */
+/* //////////////////////////////////////////////// */
+.faq-box {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 450px;
+  padding: 4rem 7rem 2rem 1rem;
+}
+
+.faq-box h1 {
+  margin-bottom: 2.5rem;
+  font-size: 30px;
+}
+
+.faq {
+  margin-bottom: 1rem;
+}
+
+.faq::after {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--divider-gray-blue);
+  content: " ";
+  margin: 0.5rem 0;
+}
+
+.q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.q h3 {
+  font-size: 15px;
+  font-weight: 200;
+  color: var(--neutral-gray-blue-dkr);
+}
+
+.q:hover,
+.q:active {
+  color: var(--primary-red-lt);
+}
+
+.btn-dropdown {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.btn-hide {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.ans {
+  height: 0;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1.2rem;
+  color: var(--neutral-gray-blue-dk);
+  transition: all 0.2s linear;
+}
+
+.active-answer {
+  height: 3.4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////ATTRIBUTION////////////////// */
+/* //////////////////////////////////////////////// */
+
+.attribution {
+  text-align: center;
+  background-color: var(--neutral-white);
+  color: rgb(59, 52, 52);
+  margin-top: 0.5rem;
+}
+.frontend-mentor,
+.author {
+  text-decoration: none;
+  color: black;
+}
+
+.author {
+  border: 1px solid transparent;
+  transition: all 0.25s;
+}
+
+.author:active,
+.author:hover {
+  border-bottom: 1px solid black;
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////MEDIA QUERY////////////////// */
+/* //////////////////////////////////////////////// */
+
+@media only screen and (max-width: 1023px) {
+  .illustration-img {
+    display: none;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .faq-box {
+    height: 450px;
+    width: 300px;
+    padding: 2.5rem 1rem 0rem 1rem;
+  }
+
+  .faq-box h1 {
+    text-align: center;
+  }
+
+  .q h3 {
+    font-size: 13px;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .shadow-img {
+    width: 300px;
+    height: 120px;
+    background: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 1.5rem 45%;
+  }
+  .illustration-img-mobile {
+    display: unset;
+    position: absolute;
+    margin: -35rem 0 0 -2rem;
+  }
+}
