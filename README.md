@@ -10,12 +10,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot.png)
+![](./images/Screenshot.png)
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/darshii98/3-card-component)
-- Live Site URL: [Github Pages](https://darshii98.github.io/3-card-component/)
+- Solution URL: [Github Repo](https://github.com/darshii98/faq-accordion-card)
+- Live Site URL: [Github Pages](https://darshii98.github.io/faq-accordion-card/)
 
 ### Built with
 
